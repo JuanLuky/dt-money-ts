@@ -7,27 +7,36 @@ import { Container } from "./styles";
 export function Summary() {
     return (
         <Container>
-            <div>
-                <header>
-                    <p>Entradas</p>
-                    <img src={IncomeImg} alt="Entradas" />
-                </header>
-                <strong> R$2000,00 </strong>
-            </div>
-            <div>
-                <header>
-                    <p>Saídas</p>
-                    <img src={OutcomeImg} alt="Saídas" />
-                </header>
-                <strong>- R$1000,00 </strong>
-            </div>
-            <div className='highlight-green'>
-                <header>
-                    <p>Total</p>
-                    <img src={TotalImg} alt="Total" />
-                </header>
-                <strong> R$1000,00 </strong>
-            </div>
+            <section>
+                <div>
+                    <header>
+                        <p>Entradas</p>
+                        <img src={IncomeImg} alt="Entradas" />
+                    </header>
+                    <strong> R$2000,00 </strong>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <header>
+                        <p>Saídas</p>
+                        <img src={OutcomeImg} alt="Saídas" />
+                    </header>
+                    <strong>- R$1000,00 </strong>
+                </div>
+
+            </section>
+            
+            <section>
+                <div className='highlight-green'>
+                    <header>
+                        <p>Total</p>
+                        <img src={TotalImg} alt="Total" />
+                    </header>
+                    <strong> R$1000,00 </strong>
+                </div>
+            </section>
         </Container>
     )
 }
