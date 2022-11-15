@@ -13,13 +13,19 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    section {
+        border-radius: 0.5rem;
+        border-top: 2px solid transparent;
+        background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    }
+
     button {
         font-size: 1rem;
         color: #fff;
         background-color: var(--blue-light);
         border: 0;
         padding: 0 2rem;
-        border-radius: 0.25rem;
+        border-radius: 0.4rem;
         height: 3rem;
         transition: filter 0.3s;
 
